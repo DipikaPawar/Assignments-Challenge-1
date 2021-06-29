@@ -3,6 +3,7 @@ Three modules that constructs our architecture:
 * network
 * application
 * Database
+![image](https://user-images.githubusercontent.com/43720925/123822989-abbf6880-d8f4-11eb-9a42-650ffa4cb89d.png)
 
 ## How to deploy, prerequisites for this Assignment
 
