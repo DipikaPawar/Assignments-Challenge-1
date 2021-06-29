@@ -9,7 +9,6 @@ Three modules that constructs our architecture:
 Setup:
 * [Install Terraform](https://www.terraform.io/intro/getting-started/install.html)
 * Setup your credentials via [AWS Provider](https://www.terraform.io/docs/providers/aws/index.html#access_key)
-* [Run Three Tier Init with the corresponding env value to setup terraform backend with s3 bucket and dynamodb](https://github.com/hchiao/three-tier-init)
 * Clone this project
 
 Run commands to deploy:
@@ -17,8 +16,6 @@ Run commands to deploy:
 * ```terraform get -update=true```
 * ```terraform init -backend-config=config/backend-${env}.conf -backend=true```
 * ```terraform apply -var-file=config/${env}.tfvars -var password=<db password> -lock=true```
-
-[Learn more about Terraform commands here](https://www.terraform.io/docs/commands/index.html)
 
 ## Configuration files
 There are two example configuration files in the ```config/``` folder.  Each contains inputs for the main terraform module to run.
