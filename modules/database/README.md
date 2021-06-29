@@ -1,4 +1,5 @@
-Database: This module deploys PostgreSQL Database using AWS RDS.
+
+## Datbase This module deploys PostgreSQL Database using AWS RDS.
 
 | Resource            | Description
 | ---                 | ---
