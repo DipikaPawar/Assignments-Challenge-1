@@ -1,10 +1,10 @@
 This is an implementation of the classic three tier architecture for application hosting.  <br />
 Three modules that constructs our architecture:
-* [network]
-* [application]
-* [database]
+* network
+* application
+* Database
 
-## How to deploy
+## How to deploy, prerequisites for this Assignment
 
 Setup:
 * [Install Terraform](https://www.terraform.io/intro/getting-started/install.html)
