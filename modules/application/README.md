@@ -11,7 +11,7 @@ We use spot instance to keep costs low.
 | Launch Configuration  | Defines how to deploy each instance, instances are deployed in private subnets
 | Elastic Load Balancer | The elb that is public facing and connected to the instances via security groups
 | Instance Profile      | IAM Instance Profile that is attached to instances
-| IAM Role              | The instance role that is attached to Instance Profile, it defines permission to interact with AWS System Manager (run command)
+| IAM Role              | The instance role that is attached to Instance Profile
 
 ## Inputs
 
