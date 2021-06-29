@@ -25,8 +25,8 @@ module "network" {
   db_subnet_c_cidr      = "${var.db_subnet_c_cidr}"
 }
 
-module "web" {
-  source           = "./modules/web"
+module "application" {
+  source           = "./modules/application"
   public_subnet_b  = "${module.network.public_subnet_b}"
   public_subnet_c  = "${module.network.public_subnet_c}"
   private_subnet_b = "${module.network.private_subnet_b}"
@@ -35,8 +35,8 @@ module "web" {
   private_sg       = "${module.network.private_sg}"
 }
 
-module "db" {
-  source              = "./modules/db"
+module "database" {
+  source              = "./modules/database"
   db_subnet_b         = "${module.network.db_subnet_b}"
   db_subnet_c         = "${module.network.db_subnet_c}"
   db_security_group   = "${module.network.private_sg}"
