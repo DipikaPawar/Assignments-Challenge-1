@@ -41,3 +41,4 @@ output "public_sg" {
 output "private_sg" {
   description = "The private security group id"
   value       = "${aws_security_group.private_sg.id}"
+}
