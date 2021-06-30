@@ -19,3 +19,4 @@ resource "aws_elb" "elb" {
     instance_port     = 80
     instance_protocol = "http"
   }
+}
