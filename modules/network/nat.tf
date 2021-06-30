@@ -17,5 +17,5 @@ resource "aws_eip" "nat_eip_c" {
 resource "aws_nat_gateway" "nat_gw_c" {
   allocation_id = "${aws_eip.nat_eip_c.id}"
   subnet_id     = "${aws_subnet.public_subnet_c.id}"
-  depends_on    = "[aws_internet_gateway.igw]
+  depends_on    = [aws_internet_gateway.igw]
 }
