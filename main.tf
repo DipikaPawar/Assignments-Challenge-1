@@ -27,6 +27,7 @@ module "network" {
 
 module "application" {
   source           = "./modules/application"
+  vpc_cidr         = "${var.vpc_cidr}"
   public_subnet_b  = "${module.network.public_subnet_b}"
   public_subnet_c  = "${module.network.public_subnet_c}"
   private_subnet_b = "${module.network.private_subnet_b}"
