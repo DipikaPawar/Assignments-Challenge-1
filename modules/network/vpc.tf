@@ -2,8 +2,8 @@
 # CONFIGURE OUR NETWORK
 # ------------------------------------------------------------------------------
 
-resource "aws_vpc" "main_vpc" {
-  cidr_block           = "${var.vpc_cidr}"
+resource "aws_vpc" "vpc_main" {
+  cidr_block = var.vpc_cidr
   enable_dns_support   = true
   enable_dns_hostnames = true
 
