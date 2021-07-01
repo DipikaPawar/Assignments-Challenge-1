@@ -4,7 +4,7 @@
 
 resource "aws_elb" "elb" {
   name            = "elb"
-  security_groups = "[${var.private_sg}", "${var.public_sg}"]
+  #security_groups = "[${var.private_sg}", "${var.public_sg}"]
   subnets         = "[${var.public_subnet_b}", "${var.public_subnet_c}]"
   health_check {
     healthy_threshold   = 2
