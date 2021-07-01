@@ -1,3 +1,9 @@
+  
+variable "vpc_cidr" {
+  description = "The cidr range for vpc"
+  type        = string
+}
+
 variable "public_subnet_b" {
   description = "The public subnet b id"
   type        = string
