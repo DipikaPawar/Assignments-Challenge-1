@@ -8,7 +8,7 @@ resource "aws_subnet" "public_subnet_b" {
   availability_zone       = "ap-southeast-2b"
   map_public_ip_on_launch = true
 
-  tags {
+  tags = {
     Name = "public-subnet-b"
   }
 }
@@ -19,7 +19,7 @@ resource "aws_subnet" "public_subnet_c" {
   availability_zone       = "ap-southeast-2c"
   map_public_ip_on_launch = true
 
-  tags {
+  tags = {
     Name = "public-subnet-c"
   }
 }
@@ -36,7 +36,7 @@ resource "aws_route_table" "public_route_table" {
     gateway_id = "${aws_internet_gateway.igw.id}"
   }
 
-  tags {
+  tags = {
     Name = "public-route-table"
   }
 }
@@ -61,7 +61,7 @@ resource "aws_subnet" "private_subnet_b" {
   availability_zone       = "ap-southeast-2b"
   map_public_ip_on_launch = false
 
-  tags {
+  tags = {
     Name = "private-subnet-b"
   }
 }
@@ -72,7 +72,7 @@ resource "aws_subnet" "private_subnet_c" {
   availability_zone       = "ap-southeast-2c"
   map_public_ip_on_launch = false
 
-  tags {
+  tags = {
     Name = "private-subnet-c"
   }
 }
@@ -83,7 +83,7 @@ resource "aws_subnet" "db_subnet_b" {
   availability_zone       = "ap-southeast-2b"
   map_public_ip_on_launch = false
 
-  tags {
+  tags = {
     Name = "db-subnet-b"
   }
 }
@@ -94,7 +94,7 @@ resource "aws_subnet" "db_subnet_c" {
   availability_zone       = "ap-southeast-2c"
   map_public_ip_on_launch = false
 
-  tags {
+  tags = {
     Name = "db-subnet-c"
   }
 }
@@ -111,7 +111,7 @@ resource "aws_route_table" "private_route_table_b" {
     nat_gateway_id = "${aws_nat_gateway.nat_gw_b.id}"
   }
 
-  tags {
+  tags = {
     Name = "private-route-table"
   }
 }
@@ -129,7 +129,7 @@ resource "aws_route_table" "private_route_table_c" {
     nat_gateway_id = "${aws_nat_gateway.nat_gw_c.id}"
   }
 
-  tags {
+  tags = {
     Name = "private-route-table"
   }
 }

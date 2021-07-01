@@ -65,7 +65,7 @@ resource "aws_network_acl" "public_acl" {
     to_port    = 65535
   }
 
-  tags {
+  tags = {
     Name = "public_acl"
   }
 }
@@ -157,7 +157,7 @@ resource "aws_network_acl" "private_acl" {
     to_port    = 5432
   }
 
-  tags {
+  tags = {
     Name = "private_acl"
   }
 }
