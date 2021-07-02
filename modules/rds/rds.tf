@@ -4,10 +4,10 @@
 
 resource "aws_db_subnet_group" "rds-subnet-group" {
   subnet_ids = var.rds_subnets
-  name = "aws-dbsg-${var.application_name}-${var.environment}-db-prisub"
+  name = "aws-${var.application_name}-${var.environment}-db"
   description = "rds subnet group for ${var.application_name} ${var.environment} environment"
   tags = {
-    Name = "aws-dbsg-${var.application_name}-${var.environment}-db-prisub"
+    Name = "aws-${var.application_name}-${var.environment}-db"
     Description = "rds subnet group for ${var.application_name} ${var.environment} environment"
     Environment = "${var.environment}"
   }
