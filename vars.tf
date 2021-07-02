@@ -3,6 +3,11 @@ variable "env" {
   type        = string
 }
 
+variable "aws_region" {}
+variable "application_name" {}
+variable "environment" {}
+variable "country" {}
+
 variable "vpc_cidr" {
   description = "The cidr range for vpc"
   type        = string
