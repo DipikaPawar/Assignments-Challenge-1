@@ -1,8 +1,8 @@
 vpc_cidr =  "10.1.0.0/16"
 aws_region = "ap-southeast-1" 
-application_name =  "UniCloud"
+application_name =  "uniCloud"
 environment =  "dev"
-country = "Singapore"
+country = "singapore"
 
 ##public subnet details
 
@@ -27,9 +27,9 @@ subnet_azs_private = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c",
                   "ap-southeast-1b","ap-southeast-1a","ap-southeast-1c"]
 
 
-ec2_names = "Cloudagonostic"
+ec2_names = "cloudagonostic"
 ami_id = "ami-018c1c51c7a13e3632"
-key_name = "CloudDMZ"
+key_name = "clouddmz"
 ec2_monitoring = "false"
 ec2_disable_api_termination = "false"
 instance_type = "t2.micro"
