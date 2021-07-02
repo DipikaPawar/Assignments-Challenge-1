@@ -28,12 +28,19 @@ module "network" {
 module "application" {
   source           = "./modules/application"
   vpc_cidr         = "${var.vpc_cidr}"
+  aws_region = var.aws_region
+  application_name = var.application_name
+  environment = var.environment
   public_subnet_b  = "${module.network.public_subnet_b}"
   public_subnet_c  = "${module.network.public_subnet_c}"
   private_subnet_b = "${module.network.private_subnet_b}"
   private_subnet_c = "${module.network.private_subnet_c}"
   public_sg        = "${module.network.public_sg}"
   private_sg       = "${module.network.private_sg}"
+  country = var.country
+
+  vpc_id = module.vpc_module.vpc_main
+  alb-e-subnet = module.vpc_module.subnet_public
 }
 
 module "database" {
