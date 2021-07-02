@@ -1,4 +1,7 @@
-output "elb_dns" {
-  description = "Elastic Load Balancer DNS"
-  value       = "${aws_elb.elb.dns_name}"
+output "alb_e_dns" {
+  value = aws_lb.alb-e.dns_name
+}
+
+output "alb_tg" {
+  value = aws_lb_target_group.alb-web-e-target-group-http-80.arn
 }
