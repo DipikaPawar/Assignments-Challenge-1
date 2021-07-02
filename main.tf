@@ -64,19 +64,19 @@ module "ec2_module" {
   subnet_azs_private = var.subnet_azs_private
   subnet_tier_private = var.subnet_tier_private
   country = var.country
-  vpc_main = module.vpc_module.vpc_main
-  ami_id = var.ami_id
-  ec2_monitoring = var.ec2_monitoring
-  instance_type = var.instance_type
-  ec2_names = var.ec2_names
-  key_name = var.key_name
-  ec2_disable_api_termination = var.ec2_disable_api_termination
-  subnet_main = [module.vpc_module.subnet_private[0], module.vpc_module.subnet_private[1], module.vpc_module.subnet_private[2]]
-  alb_tg = module.elb_module.alb_tg
-  policy_list = var.policy_list
-  asg_desired_capacity = var.asg_desired_capacity
-  asg_max_size = var.asg_max_size
-  asg_min_size = var.asg_min_size
+  #vpc_main = module.vpc_module.vpc_main
+  #ami_id = var.ami_id
+  #ec2_monitoring = var.ec2_monitoring
+  #instance_type = var.instance_type
+  #ec2_names = var.ec2_names
+  #key_name = var.key_name
+  #ec2_disable_api_termination = var.ec2_disable_api_termination
+  #subnet_main = [module.vpc_module.subnet_private[0], module.vpc_module.subnet_private[1], module.vpc_module.subnet_private[2]]
+  #alb_tg = module.elb_module.alb_tg
+  #policy_list = var.policy_list
+  #asg_desired_capacity = var.asg_desired_capacity
+  #asg_max_size = var.asg_max_size
+  #asg_min_size = var.asg_min_size
 }
 module "rds_module" {
   source     = "./modules/rds"
