@@ -1,68 +1,49 @@
-variable "env" {
-  description = "The environment to deploy"
-  type        = string
-}
-
+variable "vpc_cidr" {}
 variable "aws_region" {}
 variable "application_name" {}
 variable "environment" {}
+
 variable "country" {}
+variable "subnet_cidr_private" {}
+variable "subnet_azs_private" {}
+variable "subnet_tier_private" {}
 
-variable "vpc_cidr" {
-  description = "The cidr range for vpc"
-  type        = string
+variable "subnet_cidr_public" {}
+variable "subnet_azs_public" {}
+variable "subnet_tier_public" {}
+
+
+variable "ec2_names" {}
+variable "ami_id" {}
+variable "key_name" {}
+variable "ec2_monitoring" {}
+variable "ec2_disable_api_termination" {}
+variable "instance_type" {}
+
+variable "policy_list" {}
+
+  variable "asg_desired_capacity" {}
+  variable  "asg_max_size" {}
+  variable   "asg_min_size" {}
+
+variable "rds_password" {}
+variable "rds_instance_class" {}
+variable "rds_cluster_identifier" {}
+variable "rds_username"{}
+variable "rds_cluster_instance_identifier" {
+  
+}
+variable "rds_engine" {
+  
 }
 
-variable "public_subnet_b_cidr" {
-  description = "The cidr range for public subnet b"
-  type        = string
+variable "rds_engine_version" {
+  
 }
 
-variable "public_subnet_c_cidr" {
-  description = "The cidr range for public subnet c"
-  type        = string
+variable "rds_db_name" {
+  
 }
-
-variable "private_subnet_b_cidr" {
-  description = "The cidr range for private subnet b"
-  type        = string
-}
-
-variable "private_subnet_c_cidr" {
-  description = "The cidr range for private subnet c"
-  type        = string
-}
-
-variable "db_subnet_b_cidr" {
-  description = "The cidr range for db subnet b"
-  type        = string
-}
-
-variable "db_subnet_c_cidr" {
-  description = "The cidr range for db subnet c"
-  type        = string
-}
-
-variable "username" {
-  description = "RDS username"
-}
-
-variable "password" {
-  description = "RDS password"
-}
-
-variable "instance_class" {
-  description = "RDS instance class (e.g. db.t2.micro or db.m4.xlarge)"
-}
-
-variable "multi_az" {
-  description = "Create a replica in different zone if set to true"
-}
-
-variable "allocated_storage" {
-  description = "The amount of allocated storage"
-}
-
-variable "skip_final_snapshot" {
-  description = "Creates a snapshot when db is deleted if set to true"
+variable "hostname" {
+  
 }
