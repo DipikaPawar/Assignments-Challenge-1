@@ -28,7 +28,7 @@ subnet_azs_private = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c",
 
 
 ec2_names = "cloudagonostic"
-ami_id = "ami-018c1c51c7a13e3632"
+ami_id = "ami-018c1c51c7a13e363"
 key_name = "clouddmz"
 ec2_monitoring = "false"
 ec2_disable_api_termination = "false"
@@ -39,7 +39,7 @@ asg_min_size = "1"
 
 policy_list = ["AmazonSSMManagedInstanceCore", "CloudWatchAgentServerPolicy"]
 
-#rds_password = "YAWGEKUEDHUuuwye73649##$tegaj"
+#rds_password = "YAWGEKUEDHUuuwye73649##$tegajma"
 rds_instance_class = "db.r5.xlarge"
 rds_cluster_instance_identifier = "rds-clouddev-instance"
 rds_cluster_identifier = "rds-clouddev-cluster"
