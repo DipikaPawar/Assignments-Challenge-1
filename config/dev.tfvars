@@ -39,7 +39,7 @@ asg_min_size = "1"
 
 policy_list = ["AmazonSSMManagedInstanceCore", "CloudWatchAgentServerPolicy"]
 
-rds_password = "YAWGEKUEDHUuuwye73649##$tegaj"
+#rds_password = "YAWGEKUEDHUuuwye73649##$tegaj"
 rds_instance_class = "db.r5.xlarge"
 rds_cluster_instance_identifier = "rds-sherekhan-instance"
 rds_cluster_identifier = "rds-sherekhan-cluster"
