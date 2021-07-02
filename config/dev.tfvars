@@ -1,7 +1,7 @@
 vpc_cidr =  "10.1.0.0/16"
 aws_region = "ap-southeast-1" 
-application_name =  "uniCloud"
-environment =  "dev"
+application_name = "unicloud"
+environment = "dev"
 country = "singapore"
 
 ##public subnet details
