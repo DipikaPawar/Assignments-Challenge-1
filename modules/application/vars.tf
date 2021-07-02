@@ -33,3 +33,10 @@ variable "private_sg" {
   description = "The private security group id"
   type        = string
 }
+
+variable "aws_region" {}
+variable "application_name" {}
+variable "environment" {}
+variable "country" {}
+variable "vpc_id" {}
+variable "alb-e-subnet" {}
