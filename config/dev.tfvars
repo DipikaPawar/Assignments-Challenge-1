@@ -1,7 +1,7 @@
 vpc_cidr =  "10.1.0.0/16"
 aws_region = "ap-southeast-1" 
-application_name =  "junglebook"
-environment =  "sit"
+application_name =  "UniCloud"
+environment =  "dev"
 country = "Singapore"
 
 ##public subnet details
@@ -27,9 +27,9 @@ subnet_azs_private = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c",
                   "ap-southeast-1b","ap-southeast-1a","ap-southeast-1c"]
 
 
-ec2_names = "Mowgli"
+ec2_names = "Cloudagonostic"
 ami_id = "ami-018c1c51c7a13e3632"
-key_name = "myDMZ"
+key_name = "CloudDMZ"
 ec2_monitoring = "false"
 ec2_disable_api_termination = "false"
 instance_type = "t2.micro"
@@ -41,10 +41,10 @@ policy_list = ["AmazonSSMManagedInstanceCore", "CloudWatchAgentServerPolicy"]
 
 #rds_password = "YAWGEKUEDHUuuwye73649##$tegaj"
 rds_instance_class = "db.r5.xlarge"
-rds_cluster_instance_identifier = "rds-sherekhan-instance"
-rds_cluster_identifier = "rds-sherekhan-cluster"
+rds_cluster_instance_identifier = "rds-clouddev-instance"
+rds_cluster_identifier = "rds-clouddev-cluster"
 rds_username = "sit_master_user"
 rds_engine = "aurora-postgresql"
 rds_engine_version = "10.7"
-rds_db_name = "sherekhan"
-hostname = "rds-sherekhan"
+rds_db_name = "unicloudstackdev"
+hostname = "rds-unicloudstackdev"
