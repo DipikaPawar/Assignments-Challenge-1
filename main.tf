@@ -23,7 +23,7 @@ provider "aws" {
 }
 
 module "vpc_module" {
-  source     = "../00_modules/01_vpc"
+  source     = "../modules/vpc"
 
   vpc_cidr =  var.vpc_cidr
   aws_region = var.aws_region
@@ -41,7 +41,7 @@ module "vpc_module" {
 
 
 module "elb_module" {
-  source     = "../00_modules/03_alb"
+  source     = "../modules/alb"
 
   vpc_cidr =  var.vpc_cidr
   aws_region = var.aws_region
@@ -62,7 +62,7 @@ module "elb_module" {
 }
 
 module "ec2_module" {
-  source     = "../00_modules/02_ec2"
+  source     = "../modules/ec2"
 
   vpc_cidr =  var.vpc_cidr
   aws_region = var.aws_region
@@ -93,7 +93,7 @@ module "ec2_module" {
 }
 
 module "rds_module" {
-  source     = "../00_modules/04_rds"
+  source     = "../modules/rds"
 
   vpc_cidr =  var.vpc_cidr
   aws_region = var.aws_region
