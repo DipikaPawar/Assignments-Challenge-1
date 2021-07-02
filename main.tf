@@ -38,8 +38,6 @@ module "application" {
   public_sg        = "${module.network.public_sg}"
   private_sg       = "${module.network.private_sg}"
   country = var.country
-
-  vpc_id = module.vpc_module.vpc_main
   alb-e-subnet = module.vpc_module.subnet_public
 }
 
