@@ -4,7 +4,7 @@ Three modules that constructs our architecture:
 * application
 * Database
 
-![image](https://user-images.githubusercontent.com/43720925/123822989-abbf6880-d8f4-11eb-9a42-650ffa4cb89d.png)
+![image]![image](https://user-images.githubusercontent.com/43720925/124229196-265ed280-db05-11eb-8a32-2c7e8bb4d583.png)
 
 ## How to deploy, prerequisites for this Assignment
 
