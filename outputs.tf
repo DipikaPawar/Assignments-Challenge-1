@@ -1,6 +1,4 @@
-output "elb_dns" {
-  description = "Elastic Load Balancer DNS"
-  value       = "${module.application.elb_dns}"
+output "alb_e_dns" {value = module.elb_module.alb_e_dns}
 }
 
 output "rds_endpoint" {
