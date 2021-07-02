@@ -28,7 +28,7 @@ subnet_azs_private = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c",
 
 
 ec2_names = "Mowgli"
-ami_id = "ami-03ca998611da0fe12"
+ami_id = "ami-018c1c51c7a13e3632"
 key_name = "myDMZ"
 ec2_monitoring = "false"
 ec2_disable_api_termination = "false"
