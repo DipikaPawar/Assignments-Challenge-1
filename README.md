@@ -22,8 +22,9 @@ Setup:
 Run commands to deploy:
 * ```export env=dev (or prod)```
 * ```terraform get -update=true```
-* ```terraform init -backend-config=config/backend-${env}.conf -backend=true```
-* ```terraform apply -var-file=config/${env}.tfvars -var password=<db password> -lock=true``` ## From security perspective password should be given as input value
+* ```terraform init```
+* ```terraform plan```
+* ```terraform apply -var-file=config/${env}.tfvars -var password=<db password>``` ## From security perspective password should be given as input value
 
 ## Configuration files
 There are two example configuration files in the ```config/``` folder.  Each contains inputs for the main terraform module to run.
