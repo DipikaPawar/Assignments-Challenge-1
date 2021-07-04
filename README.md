@@ -16,7 +16,7 @@ This should launch a basic 3-tier infrastructure following:
 
 Setup:
 * [Install Terraform](https://www.terraform.io/intro/getting-started/install.html)
-* Setup your credentials via [AWS Provider](https://www.terraform.io/docs/providers/aws/index.html#access_key)
+* Setup your credentials via [AWS Provider] and access keys credentials(https://www.terraform.io/docs/providers/aws/index.html#access_key)
 * Clone this project
 
 Run commands to deploy:
