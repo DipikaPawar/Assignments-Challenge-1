@@ -1,8 +1,10 @@
 This is an implementation of the classic three tier architecture for application hosting.  <br />
-Three modules that constructs our architecture:
-* network
-* application
-* Database
+This should launch a basic 3-tier infra following:
+1.  VPC
+2.  Private and public subnets
+3.  An internet-facing ALB
+4.  An autoscaling group of Ec2 instances in private subnets
+5.  An RDS cluster in private subnets and all other resources defined in userdata.sh
 
 ![image](https://user-images.githubusercontent.com/43720925/124229196-265ed280-db05-11eb-8a32-2c7e8bb4d583.png)
 
@@ -24,6 +26,6 @@ There are two example configuration files in the ```config/``` folder.  Each con
  * dev: for development environment settings
  * uat: for uat like environment settings
 
-## Main terraform module inputs and outputs modules
+
 
 
