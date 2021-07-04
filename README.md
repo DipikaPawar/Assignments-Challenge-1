@@ -28,13 +28,13 @@ There are two example configuration files in the ```config/``` folder.  Each con
 
 | Name                  | Description                                           | Type   | Default | Required |
 | ------                | -------------                                         | :----: | :-----: | :-----:  |
-| vpc_cidr              | The amount of allocated storage                       | string | -       | yes      |
-| aws_region            | The cidr range for db subnet b                        | string | -       | yes      |
+| vpc_cidr              | Thw vpc cidr range                                    | string | -       | yes      |
+| aws_region            | The AWS region for 3 tier architecture                | string | -       | yes      |
 | application_name      | The cidr range for db subnet c                        | string | -       | yes      |
-| environment           | RDS instance class (e.g. db.t2.micro or db.m4.xlarge) | string | -       | yes      |
-| country               | Create a replica in different zone if set to true     | string | -       | yes      |
-| subnet_cidr_private   | RDS password                                          | string | -       | yes      |
-| subnet_azs_private    | The cidr range for private subnet b                   | string | -       | yes      |
+| environment           | Environment to be deployed                            | string | -       | yes      |
+| country               | Country where architecture is deployed                | string | -       | yes      |
+| subnet_cidr_private   | The cidr range for private subnet                     | string | -       | yes      |
+| subnet_azs_private    | The cidr range for availability                       | string | -       | yes      |
 | subnet_tier_private   | The cidr range for private subnet c                   | string | -       | yes      |
 | public_subnet_b_cidr  | The cidr range for public subnet b                    | string | -       | yes      |
 | public_subnet_c_cidr  | The cidr range for public subnet c                    | string | -       | yes      |
