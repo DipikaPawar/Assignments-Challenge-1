@@ -26,7 +26,6 @@ subnet_azs_private = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c",
                   "ap-southeast-1a","ap-southeast-1b","ap-southeast-1c", 
                   "ap-southeast-1b","ap-southeast-1a","ap-southeast-1c"]
 
-
 ec2_names = "cloudagonostic"
 ami_id = "ami-018c1c51c7a13e363"
 key_name = "clouddmz"
