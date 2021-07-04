@@ -39,7 +39,6 @@ asg_min_size = "1"
 
 policy_list = ["AmazonSSMManagedInstanceCore", "CloudWatchAgentServerPolicy"]
 
-#rds_password = "YAWGEKUEDHUuuwye73649##$tegajma"
 rds_instance_class = "db.r5.xlarge"
 rds_cluster_instance_identifier = "rds-clouddev-instance"
 rds_cluster_identifier = "rds-clouduat-cluster"
