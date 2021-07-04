@@ -2,8 +2,8 @@
 
 A 3 tier environment is a common setup. Use a tool of your choosing/familiarity create these resources. Please remember we will not be judged on the outcome but more focusing on the approach, style and reproducibility. How to deploy, prerequisites for this Assignment
 
-This is an implementation of the classic three tier architecture for application hosting.  <br />
-This should launch a basic 3-tier infra following:
+This is an implementation of the classic three tier architecture for application hosting. AWS best practices are followed in this 3-tier infrastructure pattern, because it gives you multiple levels of security, scalability, high availability, and redundancy.  <br />
+This should launch a basic 3-tier infrastructure following:
 1.  VPC
 2.  Private and public subnets
 3.  An internet-facing ALB
